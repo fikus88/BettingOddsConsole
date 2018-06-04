@@ -41,10 +41,7 @@ namespace BettingOddsTester.Models
             Results = new HashSet<TestResult>();
             for (int i = 1; i <= 63; i++)
             {
-                SelectableField field = new SelectableField()
-                {
-                    selected = false
-                };
+                SelectableField field = new SelectableField();
 
                 switch (i)
                 {
@@ -78,7 +75,6 @@ namespace BettingOddsTester.Models
         {
             public int ID { get; set; }
             public string Color { get; set; }
-            public bool selected { get; set; }
             public decimal stakeMultiplier { get; set; }
         }
 
